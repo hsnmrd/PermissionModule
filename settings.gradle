@@ -1,0 +1,2 @@
+include ':permission_module'
+rootProject.name = "PermissionModule"
