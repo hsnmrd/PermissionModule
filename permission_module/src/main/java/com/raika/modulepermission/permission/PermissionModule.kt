@@ -27,7 +27,7 @@ class PermissionModule(var context: Context, vararg permissions: String) {
 
                         tvTitle.text = title
                         btnAccept.text = "اعمال دسترسی"
-                        btnAccept.setTextColor(PermissionModuleResAttribute(context, R.attr.permission_module_green).getColor())
+
                         btnAccept.setOnClickListener {
                             adModel.dialog.dismiss()
                             permissionRequest.retry()

@@ -55,7 +55,7 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:stateListAnimator="@null"
-                android:textColor="#1EE921"
+                android:textColor="?attr/permission_module_green"
                 android:textSize="@dimen/_10sdp"
                 app:backgroundTint="?attr/permission_module_transparent"
                 app:cornerRadius="5dp"
