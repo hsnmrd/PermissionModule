@@ -2,6 +2,7 @@ package com.raika.modulepermission.permission
 
 import android.app.Activity
 import android.content.Context
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.textview.MaterialTextView
 import com.raika.alertmodule.dialog.ModuleBottomAlert
 import com.raika.attr.PermissionModuleResAttribute
@@ -22,7 +23,7 @@ class PermissionModule(var context: Context, vararg permissions: String) {
                         val title = "بدون اعمال دسترسی ${getProcessName(permissionList.getOrNull(0))} ، عملیات غیر قابل انجام است"
 
                         val tvTitle = adModel.view.findViewById<MaterialTextView>(R.id.permission_module_tv_alert_dialog_ask_permission)
-                        val btnAccept = adModel.view.findViewById<MaterialTextView>(R.id.permission_module_btn_root_dialog_ask_permission)
+                        val btnAccept = adModel.view.findViewById<MaterialButton>(R.id.permission_module_btn_root_dialog_ask_permission)
 
                         tvTitle.text = title
                         btnAccept.text = "اعمال دسترسی"
