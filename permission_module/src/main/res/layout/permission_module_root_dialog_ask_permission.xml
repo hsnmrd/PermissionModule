@@ -9,7 +9,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_alert_dialog_rf_task_title"
+        android:id="@+id/permission_module_cv_alert_dialog_ask_permission"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -32,7 +32,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_alert_dialog_rf_task_title"
+                android:id="@+id/permission_module_tv_alert_dialog_ask_permission"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -41,12 +41,11 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingRight="5dp"
-                android:text="آیا مطمئن به قطع درخواست هستید"
                 android:textColor="?attr/permission_module_black"
                 android:textSize="@dimen/_12sdp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_root_dialog_deny_request"
+                android:id="@+id/permission_module_btn_root_dialog_ask_permission"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -56,7 +55,6 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:stateListAnimator="@null"
-                android:text="قطع درخواست"
                 android:textColor="#1EE921"
                 android:textSize="@dimen/_10sdp"
                 app:backgroundTint="?attr/permission_module_transparent"
