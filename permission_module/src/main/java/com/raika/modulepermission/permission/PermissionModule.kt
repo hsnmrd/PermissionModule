@@ -16,7 +16,7 @@ class PermissionModule(var context: Context, vararg permissions: String) {
         (context as Activity).askPermissions(*permissionList) {
             onGranted { granted() }
             onShowRationale { permissionRequest ->
-                ModuleBottomAlert(context, R.layout.permission_module_root_dialog_ask_permission)
+                ModuleBottomAlert(context, R.layout.permission_module_root_dialog_ask_permission, 0f)
                     .setCancelable(true)
                     .onViewCreate { adModel ->
                         val title = "بدون اعمال دسترسی ${getProcessName(permissionList.getOrNull(0))} ، عملیات غیر قابل انجام است"
